@@ -1,0 +1,206 @@
+/* Should have split this into individual modules for their respective components, 
+  but it wasn't too long using one file for the home page */
+
+.body {
+  padding: 0;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  width: 80%;
+  max-width: 1536px;
+  height: 100vh;
+}
+
+.text {
+  color: #858585;
+}
+
+.nav {
+  margin: 40px auto 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  padding-right: 20px;
+}
+
+.h1 {
+  color: #ffffff;
+  font-size: 3rem;
+  margin: 70px 0px 0px 0px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.headingOne {
+  border-bottom: 4px solid #debf79;
+}
+
+.a {
+  color: #debf79;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.p {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  margin: 30px 0 0;
+  line-height: 2;
+}
+
+.span {
+  color: #debf79;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+/* card component */
+
+.cardContainer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0;
+}
+.card {
+  display: block;
+  text-align: center;
+  max-width: 500px;
+  height: 500px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  padding: 40px 60px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.img {
+  height: 120px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  display: block;
+  text-align: left;
+  margin-top: 20px;
+  height: 200px;
+}
+
+.info h1 {
+  font-size: 2.6rem;
+  text-align: left;
+}
+
+.info p {
+  line-height: 2;
+  font-family: "Poppins", sans-serif;
+  color: #858585;
+  padding: 0px 0px 0px 0px;
+}
+
+.button {
+  display: block;
+  position: relative;
+  margin-top: 30px;
+  background-color: #debf79;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+  width: 150px;
+  padding: 13px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  margin: 40px auto;
+}
+
+/* JavaScript Name Filter Puzzle */
+
+.namesObject {
+  height: 200px;
+  text-align: center;
+  list-style-position: inside;
+  margin-bottom: 30px;
+  padding: 0;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Media Queries for different device sizes */
+
+@media screen and (max-width: 576px) {
+  .nav {
+    margin: 40px 10px;
+  }
+  .cardContainer {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  .card {
+    max-width: 100%;
+  }
+  .body {
+    display: flex;
+    flex-direction: column;
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+  .bottom {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cardContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+  .card {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .cardContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+  .card {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .body {
+    width: 90%;
+  }
+  .cardContainer {
+    gap: 20px;
+  }
+  .card {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .cardContainer {
+    gap: 20px;
+  }
+  .body {
+    width: 90%;
+  }
+  .bottom {
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,58 @@
+.contactForm {
+  padding-top: 280px;
+  width: 100%;
+}
+
+.gridContainer {
+  height: 300px;
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+
+.input {
+  background-color: #f5f5f5;
+  color: #858585;
+  border: none;
+  padding: 0 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  height: 50px;
+  width: 100%;
+}
+
+/* .input:required {
+  border: 1px solid red;
+} */
+.inputFocus {
+  border: 1px solid red;
+}
+
+.input5 {
+  background-color: #f5f5f5;
+  resize: none;
+  border: none;
+  padding: 15px 20px;
+  height: 150px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  width: 100%;
+  color: #858585;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.h1 {
+  font-size: 2.5rem;
+}
+
+.contactForm button {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .contactForm {
+    padding-top: 0;
+  }
+}
