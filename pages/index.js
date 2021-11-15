@@ -50,23 +50,17 @@ function HomePage({ cards }) {
           <Cards
             title={cards.data[0].title}
             content={cards.data[0].content}
-            image={
-              <img src="https://raw.githubusercontent.com/Midwestern-Interactive/tech-challenge/master/assets/Talkie.png" />
-            }
+            image={<img src="Talkie.png" alt="Walkie Talkie" />}
           />
           <Cards
             title={cards.data[1].title}
             content={cards.data[1].content}
-            image={
-              <img src="https://raw.githubusercontent.com/Midwestern-Interactive/tech-challenge/master/assets/Rabbit.png" />
-            }
+            image={<img src="Rabbit.png" alt="Rabbit" />}
           />
           <Cards
             title={cards.data[2].title}
             content={cards.data[2].content}
-            image={
-              <img src="https://raw.githubusercontent.com/Midwestern-Interactive/tech-challenge/master/assets/Shield.png" />
-            }
+            image={<img src="Shield.png" alt="Shield" />}
           />
         </div>
         <div className={styles.bottom}>
